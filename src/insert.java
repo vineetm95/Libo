@@ -655,7 +655,6 @@ BufferedImage newImage;
         // Set query string and filter only Google eBooks.
         System.out.println("Query: [" + query + "]");
         List volumesList = books.volumes().list(query);
-        //volumesList.setFilter("ebooks");
         // Execute the query.
         Volumes volumes = volumesList.execute();
         if (volumes.getTotalItems() == 0 || volumes.getItems() == null) {
